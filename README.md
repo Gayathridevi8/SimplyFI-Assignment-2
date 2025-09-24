@@ -39,9 +39,3 @@ It replicates the **Assignment 2 demo app**, fetching user profile data from the
 
 ---
 
-## 📂 Project Setup
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/react-assignment-2.git
-cd react-assignment-2
