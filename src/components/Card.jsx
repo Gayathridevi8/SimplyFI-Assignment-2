@@ -1,4 +1,4 @@
-import  { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import {
   DeleteFilled,
   EditOutlined,
@@ -10,7 +10,14 @@ import { createAvatar } from "@dicebear/core";
 import { lorelei } from "@dicebear/collection";
 import ModalComponent from "./Modal";
 
-const CardComponent = ({ profile, details, onDelete, onUpdate, username }) => {
+const CardComponent = ({
+  profile,
+  details,
+  onDelete,
+  onUpdate,
+  username,
+  id,
+}) => {
   const [liked, setLiked] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const avatar = useMemo(() => {
@@ -80,7 +87,7 @@ const CardComponent = ({ profile, details, onDelete, onUpdate, username }) => {
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
         onSave={(values) => {
-          onUpdate(profile.id, values);
+          onUpdate(id, values);
         }}
       />
     </>

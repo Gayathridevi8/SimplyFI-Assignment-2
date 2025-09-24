@@ -20,7 +20,6 @@ const ModalComponent = ({
   const onFinish = (values) => {
     onSave(values);
     setIsModalOpen(false);
-    form.resetFields();
   };
 
   useEffect(() => {

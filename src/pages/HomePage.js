@@ -55,6 +55,8 @@ const HomePage = () => {
                       phone: user.phone,
                       website: user.website,
                     }}
+                    username={user.username}
+                    id={user.id}
                     details={[
                       {
                         icon: (
