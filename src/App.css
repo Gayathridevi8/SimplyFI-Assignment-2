@@ -1,12 +1,18 @@
+
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.ant-card-actions{
+  background-color: #fafafa !important;
+  border-top: 1px solid #e8e8e8;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
